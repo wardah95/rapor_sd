@@ -3,7 +3,7 @@ error_reporting();
 	include 'koneksi.php';
 
 	$username  = $_POST['username'];
-	$password  = md5($_POST['password']);
+	$password  = $_POST['password'];
 
 	$query     ="SELECT * FROM user WHERE username='$username' AND password='$password'";
 	// die(var_dump($query));
@@ -25,14 +25,14 @@ if($jlhrecord > 0){
 
 	session_start();
 	
-	
+
 	$_SESSION['nama']		=$nama;
 	$_SESSION['username']	=$username;
 	$_SESSION['password']	=$password;
 	$_SESSION['level']		=$level;
 	$_SESSION['jabatan']	=$jabatan;
 	$_SESSION['id_guru']	=$id_guru;
-	// die(var_dump($id_guru));
+	// die(var_dump($_SESSION['level']));
 	//redirect level
 		if($level=='Admin'){
 			echo 'Anda berhasil login sebagai admin';
