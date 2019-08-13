@@ -1,0 +1,3 @@
+<div class="content">
+<center>SELAMAT DATANG DI SISTEM INFORMASI PENGISIAN RAPOT ONLINE RAPOT_KEPSEK</center>
+</div>
